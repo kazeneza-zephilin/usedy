@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{% endblock %} | usedy</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <nav class="px-6 py-6 flex items-center justify-between border-b border-gray-200">
+            <a href="/" class="text-xl font-semibold">usedy</a>
+            <div class="space-x-6"></div>
+            <a href="#" class="text-xl font-semibold hover:text-gray-500">new item</a>
+            <a href="#" class="text-xl font-semibold hover:text-gray-500">browse item</a>
+        </nav>
+        <div class="px-6 py-6">{% block content %}{% endblock %}</div>
+    </body>
+</html>
