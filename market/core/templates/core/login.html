@@ -2,7 +2,7 @@
 {% block content %}
 <div class="w-1/2 text-center my-6 p-6 mx-auto bg-gray-100 rounded-xl">
     <h1 class="mb-6 text-3xl">Login</h1>
-    <form method="post" action=".">
+    <form method="post" action="." novalid>
         {% csrf_token %}
         <div class="mb-3">
             <label class="inline-block mb-2">Username</label><br />
