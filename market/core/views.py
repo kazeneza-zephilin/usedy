@@ -1,12 +1,12 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate, login
-from item.models import Catergory, Item
+from item.models import Category, Item
 from .forms import SignUpForm, LoginForm
 
 # Create your views here.
 def index(request):
     items = Item.objects.filter(is_sold=False)
-    categories = Catergory.objects.all()
+    categories = Category.objects.all()
     return render(request, 'core/index.html', {
         'categories': categories,
         'items': items
